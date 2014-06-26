@@ -37,7 +37,7 @@ if hb >= 80.0
 elsif hb > 60
   return "Party Rock!"
 elsif hb > 40
-  return "Chill"
+  return "Chilling"
 elsif hb > 20
   return "Almost empty come with friends!"
 elsif hb >  0
@@ -46,4 +46,5 @@ else
   "The place is close as of now"
 end
 end
+
 end
