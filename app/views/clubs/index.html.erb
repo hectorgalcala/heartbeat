@@ -2,11 +2,12 @@
 
 <div class='row' id='logo'>
 	<div class="six columns centered">
-		<img src="/assets/tagline_heartbeat.png">
-		<img src="assets/heart_heartbeat.png" class="animated pulse-slow infinite">
+<%= image_tag 'tagline_heartbeat.png' %>
+<%= image_tag 'heart_heartbeat.png' %>
+	<!--	<img src="/assets/tagline_heartbeat.png">
+		<img src="assets/heart_heartbeat.png" class="animated pulse-slow infinite"> -->
 	</div>
 </div>
-
 <font color="black"><!-- <h1>Heartbeat</h1> -->
 	<h2 class='city'>Miami Beach</h2>
 	<% @clubs.each do |club| %>
@@ -23,9 +24,8 @@
 					  <li><%= club.hours %></li>
 					  <li><%= club.phone %></li>
 					  <!-- <img src='heart_heartbeat.png' style=' max-width: 250px; animation-duration: <%=club.animSpeed(club.people, club.capacity)%>s;
-						-webkit-animation-duration: <%=club.animSpeed(club.people, club.capacity)%>s;
+						 -webkit-animation-duration: <%=club.animSpeed(club.people, club.capacity)%>s;
 						-webkit-filter: grayscale(<%=club.animSpeed(club.people, club.capacity)%>)' class='animated pulse-slow infinite'/> -->
-
 						<%= image_tag 'heart_heartbeat.png', style: "max-width: 250px; animation-duration: #{club.animSpeed(club.people, club.capacity)}s;
 						-webkit-animation-duration: #{club.animSpeed(club.people, club.capacity)}s;
 						-webkit-filter: grayscale(#{club.animSpeed(club.people, club.capacity)})", class: 'animated pulse-slow infinite' %>
