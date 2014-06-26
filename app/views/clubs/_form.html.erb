@@ -1,0 +1,60 @@
+<%= form_for(@club) do |f| %>
+  <% if @club.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@club.errors.count, "error") %> prohibited this club from being saved:</h2>
+
+      <ul>
+      <% @club.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="centered">
+<div class="row">
+<div class="four columns centered field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  </div>
+  <div class="row">
+  <div class="four columns centered field">
+      <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  </div>
+  <div class="row">
+  <div class="four columns centered field">
+    <%= f.label :hours %><br>
+    <%= f.text_field :hours %>
+</div>
+</div>
+<div class="row">
+<div class="four columns centered field">
+    <%= f.label :phone %> <br>
+    <%= f.text_field :phone %>
+  </div>
+  </div>
+  <div class="row">
+  <div class="four columns centered field">
+    <%= f.label :people %><br>
+    <%= f.text_field :people %>
+  </div>
+  </div>
+  <div class="row">
+  <div class="four columns centered field">
+    <%= f.label :capacity %><br>
+    <%= f.text_field :capacity %>
+  </div>
+  </div>
+<div class="actions">
+    <%= f.submit %>
+  </div>
+</div>
+<% end %>
+
+
+
+<%= link_to 'New Club', new_club_path %>
+<!-- <%= link_to 'Show', @club %> | -->

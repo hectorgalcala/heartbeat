@@ -1,0 +1,55 @@
+<!--section id="wrapper" style="box-shadow: rgb(0, 0, 0) 0px 0px 150px inset;"-->
+
+<div class='row' id='logo'>
+	<div class="six columns centered">
+		<img src="/assets/tagline_heartbeat.png">
+		<img src="assets/heart_heartbeat.png" class="animated pulse-slow infinite">
+	</div>
+</div>
+
+<font color="black"><!-- <h1>Heartbeat</h1> -->
+	<h2 class='city'>Miami Beach</h2>
+	<% @clubs.each do |club| %>
+		<section class='club_par'>
+			<div class='row'>
+				<div class="twelve columns club_item">
+					<h2><%= club.name %></h2>
+					<!-- <img src="moodbar.png">-->
+					<h2>Heartbeat Mood</h2>
+					<!-- <h2 class="h2c"><%=club.mood%></h2> -->
+					<h2 class="h2c"><%=club.heartbeat(club.people,club.capacity) %></h2>
+					<!-- <p>More Info</p> -->
+					  <li align="center"><%= club.address %></li>
+					  <li><%= club.hours %></li>
+					  <li><%= club.phone %></li>
+					  <img src='assets/heart_heartbeat.png' style=' max-width: 250px; animation-duration: <%=club.animSpeed(club.people, club.capacity)%>s; -webkit-animation-duration: <%=club.animSpeed(club.people, club.capacity)%>s; -webkit-filter: grayscale(<%=club.animSpeed(club.people, club.capacity)%>)' class='animated pulse-slow infinite'/>
+				</div>
+			</div>
+		</section>
+	<% end %>
+</font>
+
+<!-- <h1>Listing clubs</h1>
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clubs.each do |club| %>
+      <tr>
+        <td><%= link_to 'Show', club %></td>
+        <td><%= link_to 'Edit', edit_club_path(club) %></td>
+        <td><%= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+-->
+
+<%= link_to 'New Club', new_club_path %>
+<!--/section-->
