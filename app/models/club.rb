@@ -1,6 +1,7 @@
 class Club < ActiveRecord::Base
- # validates :name, presence: true,
- #                    length: { minimum: 5 }
+ # validates_length_of :name,
+ #  { minimum: 5, message: "" }
+ #  validates :name, presence: true, length: {maximum:10, message:""}
 
  def animSpeed(people, capacity)
 
@@ -45,6 +46,9 @@ elsif hb >  0
 else
   "The place is close as of now"
 end
+end
+def heartbeat2
+heartbeat(self.people,self.capacity)
 end
 
 end

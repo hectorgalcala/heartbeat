@@ -1,13 +1,14 @@
 // Place all the styles related to the clubs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+// Y AQUI ES DONDE ESTAN TODOS LOS STYLES
+// CUALQUIER PREGUNTA ME ESCRIBES POR IMMESSAGE
 @charset "UTF-8";
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 /**
 * Gumby Framework
 * ---------------
-*
+*ui
 * Follow @gumbycss on twitter and spread the love.
 * We worked super hard on making this awesome and released it to the web.
 * All we ask is you leave this intact. #gumbyisawesome
@@ -49,8 +50,8 @@ html { font-size: 16px; line-height: 1.625em; }
 
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body { background: white; font-family: "Open Sans"; font-weight: 400; color: #555555; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-@media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; } }
+body { background: white; font-family: "Open Sans"; font-weight: 400; color: #555555; position: relative; width: 100% !important; margin-left:0px !important; margin-right: 0px !important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+@media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; width: 100% !important; margin-left:0px !important; margin-right: 0px !important; } }
 
 html, body { height: 100%; }
 
@@ -1735,17 +1736,51 @@ li {
 }
 
 .city {
-
-	font-weight: 800;
+	font-weight: 500;
+	
 	text-align: center;
-
+	letter-spacing: 5pt;
+	text-transform:uppercase;
+	color:#fe605c;
+	font-size:28px;
+	margin-bottom:30px;
 }
 
+.ClubName {
+	font-size:34px;
+	padding-top:20px;
+	padding-bottom:20px;
+background: #fff4f4; /* Old browsers */
+background: -moz-linear-gradient(top, #fff4f4 0%, #ffffff 35%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff4f4), color-stop(35%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #fff4f4 0%,#ffffff 35%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #fff4f4 0%,#ffffff 35%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #fff4f4 0%,#ffffff 35%); /* IE10+ */
+background: linear-gradient(to bottom, #fff4f4 0%,#ffffff 35%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff4f4', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	letter-spacing:2pt;
+	font-weight:300;
+}
+
+.MoodBeat {
+	margin-top:10px;
+	margin-bottom:-17px;
+	font-size:18px;
+	font-weight:500;
+}
+
+.Mood {
+	margin-bottom:15px;
+	width:700px;
+	left:50%;
+	margin-left:-350px;
+	
+}
 .club_par {
 	width: 100%;
 	//background: url('http://livmiamivip.com/wp-content/uploads/2013/05/livmiami2.jpg');
 
-	opacity: 0.5;
+	opacity: 0.3;
 	text-align: center;
 }
 
@@ -1753,10 +1788,22 @@ li {
 	opacity: 1;
 }
 
+.ClubAddress {
+	font-weight:300 !important;
+	font-family:"Open Sans";
+	font-size:12px;
+	color:#484848;
+	line-height:13px;
+	letter-spacing:0.3pt;
+
+}
+
+.extra_space {
+	margin-bottom:15px;}
 
 .club_item {
 	// opacity: 1 !important;
-	border-top: 1px solid #000;
+	border-top: 1px solid #8199b2;
 	// border-radius: 5px;
 	padding-bottom: 3em;
 }
