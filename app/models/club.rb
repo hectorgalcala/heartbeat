@@ -47,8 +47,6 @@ else
   "The place is close as of now"
 end
 end
-def heartbeat2
-heartbeat(self.people,self.capacity)
-end
+
 
 end
