@@ -43,12 +43,22 @@ elsif hb > 20
   return "Almost empty come with friends!"
 elsif hb >  10
   return "Definitely come with friends or else you are on your own"
+elsif hb == 2
+  return ""
+elsif hb == 3
+  return "LETS GET HIGH"
+elsif hb == 4
+  return "GETTING FUCKING WEIRD"
 elsif hb == 5
   return "TONIGHT IS GONNA BE A GOOD NIGHT"
 elsif hb == 6
   return "WILD ON"
 elsif hb == 7
   return "OF THE HOOK"
+elsif hb == 8
+  return "GET READY FOR TONIGHT"
+elsif hb == 9
+  return "ITS FUCKING INSANE"
 else
   "The place is close as of now"
 end
