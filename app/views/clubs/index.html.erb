@@ -10,7 +10,7 @@
 	</div>
 </div>
 <font color="black"><!-- <h1>Heartbeat</h1> -->
-	<h2 class='city'><span class="pe-7s-map-marker pe-2x pe-va"></span><br>Boca Raton</h2>
+	<h2 class='city'><span class="pe-7s-map-marker pe-2x pe-va"></span><br>HAPPY 4TH OF JULY</h2>
 	<% @clubs.each do |club| %>
 		<section class='club_par'>
 			<div class='row'>
@@ -18,8 +18,8 @@
 					<h2 class="ClubName"><%= club.name %></h2>
 					<!-- <img src="moodbar.png">-->
 					<h2 class="MoodBeat">Heartbeat Mood</h2>
-					<!-- <h2 class="h2c Mood"><%=club.mood%></h2> -->
-					<h2 class="h2c"><%=club.heartbeat(club.people,club.capacity) %></h2>
+					 <h2 class="h2c"><%=club.mood%></h2> 
+				<!--	<h2 class="h2c"><%=club.heartbeat(club.people,club.capacity) %></h2> -->
 					<!-- <p>More Info</p> -->
 					  <li class="ClubAddress" align="center"><%= club.address %></li>
 					  <li class="ClubAddress"><%= club.hours %></li>
