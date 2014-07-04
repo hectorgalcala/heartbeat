@@ -33,7 +33,7 @@ def heartbeat(people,capacity)
     capacity = 100
   end
  hb = ((people.to_f/capacity)*100)
-if hb >= 80.0
+if hb > 80.0
   return "Insane!"
 elsif hb > 60
   return "Party Rock!"
