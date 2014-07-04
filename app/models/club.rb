@@ -43,11 +43,11 @@ elsif hb > 20
   return "Almost empty come with friends!"
 elsif hb >  0
   return "Definitely come with friends or else you are on your own"
-elsif hb > 90
+elsif hb == 91
   return "TONIGHT IS GONNA BE A GOOD NIGHT"
-elsif hb > 96
+elsif hb == 96
   return "WILD ON"
-elsif hb > 98
+elsif hb == 98
   return "OF THE HOOK"
 else
   "The place is close as of now"
