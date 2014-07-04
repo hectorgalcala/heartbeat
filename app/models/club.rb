@@ -48,7 +48,7 @@ elsif hb == 2
 elsif hb == 3
   return "LETS GET HIGH"
 elsif hb == 4
-  return "GETTING FUCKING WEIRD"
+  return "GETTING F*CKING WEIRD"
 elsif hb == 5
   return "TONIGHT IS GONNA BE A GOOD NIGHT"
 elsif hb == 6
