@@ -5,39 +5,34 @@
 	<div class="six columns centered">
 <%= image_tag 'tagline_heartbeat.png' %>
 <%= image_tag 'heart_heartbeat.png' %>
-	<!--	<img src="/assets/tagline_heartbeat.png">
-		<img src="assets/heart_heartbeat.png" class="animated pulse-slow infinite"> -->
-	</div>
 </div>
-<font color="black"><!-- <h1>Heartbeat</h1> -->
+</div>
 	<h2 class='city'><span class="pe-7s-map-marker pe-2x pe-va"></span><br>MIAMI</h2>
 	<% @clubs.each do |club| %>
 		<section class='club_par'>
 			<div class='row'>
 				<div class="twelve columns club_item">
 					<h2 class="ClubName"><%= club.name %></h2>
-					<!-- <img src="moodbar.png">-->
 					<h2 class="MoodBeat">Heartbeat Mood</h2>
 				<!--	 <h2 class="h2c"><%=club.mood%></h2> -->
 					<h2 class="h2c"><%=club.heartbeat(club.people,club.capacity) %></h2>
-					<!-- <p>More Info</p> -->
 					  <li class="ClubAddress" align="center"><%= club.address %></li>
 					  <li class="ClubAddress"><%= club.hours %></li>
 					  <li class="ClubAddress extra_space"><%= club.phone %></li>
 
-						<%= image_tag 'heart_heartbeat.png', style:"max-width: 250px; animation-duration: 0.1s;
+					<!--	<%= image_tag 'heart_heartbeat.png', style:"max-width: 250px; animation-duration: 0.1s;
 						-webkit-animation-duration: 0.2s;
-						-webkit-filter: grayscale(10)", class:'animated pulse-slow infinite' %>
+						-webkit-filter: grayscale(10)", class:'animated pulse-slow infinite' %> -->
 
-<!--				<%= image_tag 'heart_heartbeat.png', style:"max-width: 250px; animation-duration: #{club.animSpeed(club.people, club.capacity)}s;
+				<%= image_tag 'heart_heartbeat.png', style:"max-width: 250px; animation-duration: #{club.animSpeed(club.people, club.capacity)}s;
 						-webkit-animation-duration: #{club.animSpeed(club.people, club.capacity)}s;
-						-webkit-filter: grayscale(#{club.animSpeed(club.people, club.capacity)})", class:'animated pulse-slow infinite' %> -->
+						-webkit-filter: grayscale(#{club.animSpeed(club.people, club.capacity)})", class:'animated pulse-slow infinite' %>
 
 				</div>
 			</div>
 		</section>
 	<% end %>
-</font>
+
 
 <!-- <h1>Listing clubs</h1>
 <table>

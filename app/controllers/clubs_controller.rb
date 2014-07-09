@@ -5,11 +5,16 @@ class ClubsController < ApplicationController
   # GET /clubs.json
   def index
     @clubs = Club.all
+
+  # @clubs = Club.where id:1
+  # @clubs = Club.where id:2
   end
+
+
   # GET /clubs/1
   # GET /clubs/1.json
   def show
-  
+
   end
 
   # GET /clubs/new
